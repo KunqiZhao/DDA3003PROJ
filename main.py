@@ -22,12 +22,12 @@ def _parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         '--data',
-        default=r'C:\Users\xzh88\Desktop\cleaned\combined_air_quality_data.csv',
+        default='cleaned\combined_air_quality_data.csv',
         help='输入 CSV 数据文件路径',
     )
     parser.add_argument(
         '--out',
-        default=r'C:\Users\xzh88\Desktop\cleaned\visualizations',
+        default='visualizations',
         help='输出目录路径（不存在时自动创建）',
     )
     return parser.parse_args()
